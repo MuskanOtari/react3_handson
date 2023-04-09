@@ -38,15 +38,21 @@
 }
 
 html {
-    background: linear-gradient(to bottom, #33ccff 0%, #ff99cc 100%);
+    background: linear-gradient(to bottom, #9370db 30%, #33ccff 60%, #e6e6fa 100%);
     background-repeat: no-repeat;
     height: 100vh;
     width: 100vw;
 }
 
+h1 {
+    text-align: center;
+    font-family: 'Alkatra';
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre&family=Abril+Fatface&family=Alkatra&family=Amita&family=Cabin&family=Caramel&family=DM+Sans&family=EB+Garamond:wght@400;500&family=Fira+Sans:wght@300&family=Inconsolata&family=Manrope&family=Moon+Dance&family=Noto+Sans+KR:wght@300&family=Poppins:wght@200;300&family=Raleway:wght@200&family=Roboto:wght@100&family=Romanesco&family=Yaldevi:wght@500&display=swap');
 .oneDiv {
     display: block;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: 'Cabin';
 }
 
 .form {
@@ -69,9 +75,25 @@ input {
 button {
     cursor: pointer;
     font-size: 20px;
+    height: 40px;
+    width: 130px;
+    border-radius: 30px;
+    border: 2px solid;
+    text-align: center;
+    font-family: 'Manrope';
+    margin-top: 3px;
 }
 
-button,
+.back {
+    display: flex;
+    width: auto;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3px;
+    font-size: 20px;
+    font-family: 'Manrope';
+}
+
 input {
     border: 2px solid;
     border-radius: 40px;
@@ -85,7 +107,7 @@ input {
 }
 
 .box {
-    background-color: #f59dbc;
+    background-color: #d8bfd8;
     border-radius: 40px;
     margin: 20px;
     padding: 40px;
@@ -100,5 +122,5 @@ input {
     height: max-content;
     margin: 110px auto auto;
     width: 82%;
-    font-size: 10px;
+    font-size: 20px;
 }

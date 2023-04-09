@@ -31,15 +31,24 @@ class Form extends Component {
       <>
       {this.state.clicked ?
       <div>
-      <h1>EMPLOYEE FEEDBACK FORM</h1><br/>
-      <div className="input-fields">
-      <label>Name:</label>
-      <input type="text" placeholder="Enter Name" name="name" onChange={this.handleChange}></input><br></br>
-      <label>Department:</label>
-      <input type="text" placeholder="Enter Department" name="department" onChange={this.handleChange}></input><br></br>
-      <label>Rating:</label>
-      <input type="text" placeholder="Rating" name="rating" onChange={this.handleChange}></input><br></br>
+      <div className="oneDiv">
+       <h1 >EMPLOYEE FEEDBACK FORM</h1>
+       <div className="form">
+       <div className="row">
+       <label>Name: </label>
+       <input type='text' placeholder="Enter Your Name" name="name" onChange={this.handleChange}/>
+       </div>
+       <div className="row">
+       <label>Department: </label> 
+       <input type='text' placeholder="Enter Your Department" name="dept" onChange={this.handleChange}/>
+       </div>
+      <div className="row">
+      <label>Rating: </label> 
+      <input type='text' placeholder="Enter Rating" name="rating" onChange={this.handleChange}/>
+      </div>
       <button onClick={this.handleSubmit}>Submit</button>
+       
+      </div>
       </div>
       </div>:
       <div>
